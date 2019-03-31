@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm.csproj", "{78A7AA2F-93E8-4FC1-9857-14EE96D50926}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78A7AA2F-93E8-4FC1-9857-14EE96D50926}.Debug|x86.ActiveCfg = Debug|x86
+		{78A7AA2F-93E8-4FC1-9857-14EE96D50926}.Debug|x86.Build.0 = Debug|x86
+		{78A7AA2F-93E8-4FC1-9857-14EE96D50926}.Release|x86.ActiveCfg = Release|x86
+		{78A7AA2F-93E8-4FC1-9857-14EE96D50926}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
