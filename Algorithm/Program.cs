@@ -9,8 +9,7 @@ namespace Algorithm
             // Even, random
             int[] inputArray1 = { 1, 6, 4, 9, 0, 12, 56, 3 };
             // Odd, random
-            //int[] inputArray2 = { 5, 8, 2, 3, 0, 11, 4, 29, 7 };
-            int[] inputArray2 = { 0, 2, 3, 4, 5, 7, 8, 11, 29 };
+            int[] inputArray2 = { 5, 8, 2, 3, 0, 11, 4, 29, 7 };
             // Sorted
             int[] inputArray3 = { 23, 30, 47, 55, 69, 70, 81, 99 };
             // Reverse order

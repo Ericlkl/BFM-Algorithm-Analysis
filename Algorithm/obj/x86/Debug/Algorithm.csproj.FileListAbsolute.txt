@@ -1,6 +1,0 @@
-/Users/eric/Desktop/Workspace/CAB301_Assignment1/Algorithm/bin/Debug/Algorithm.exe
-/Users/eric/Desktop/Workspace/CAB301_Assignment1/Algorithm/bin/Debug/Algorithm.pdb
-/Users/eric/Desktop/Workspace/CAB301_Assignment1/Algorithm/obj/x86/Debug/Algorithm.csprojAssemblyReference.cache
-/Users/eric/Desktop/Workspace/CAB301_Assignment1/Algorithm/obj/x86/Debug/Algorithm.csproj.CoreCompileInputs.cache
-/Users/eric/Desktop/Workspace/CAB301_Assignment1/Algorithm/obj/x86/Debug/Algorithm.exe
-/Users/eric/Desktop/Workspace/CAB301_Assignment1/Algorithm/obj/x86/Debug/Algorithm.pdb
