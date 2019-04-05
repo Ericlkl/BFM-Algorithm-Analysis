@@ -6,28 +6,8 @@ namespace Algorithm
     {
         public static void Main(string[] args)
         {
-            // Even, random
-            int[] inputArray1 = { 1, 6, 4, 9, 0, 12, 56, 3 };
-            // Odd, random
-            int[] inputArray2 = { 5, 8, 2, 3, 0, 11, 4, 29, 7 };
-            // Sorted
-            int[] inputArray3 = { 23, 30, 47, 55, 69, 70, 81, 99 };
-            // Reverse order
-            int[] inputArray4 = { 123, 93, 87, 75, 60, 33, 12, 2, 1 };
-            // Contains negative values
-            int[] inputArray5 = { -1, 6, 4, 0, 8, -3, 2, 5 };
-            // Contains duplicates
-            int[] inputArray6 = { 50, 4, 2, 3, 1, 9, 10, 2, 3 };
-            //Invalid size input!"
-            int[] inputArray7 = { 0 };
-
-            Console.WriteLine("Array 1 : " + BruteForceMedian(inputArray1) );
-            Console.WriteLine("Array 2 : " + BruteForceMedian(inputArray2) );
-            Console.WriteLine("Array 3 : " + BruteForceMedian(inputArray3) );
-            Console.WriteLine("Array 4 : " + BruteForceMedian(inputArray4) );
-            Console.WriteLine("Array 5 : " + BruteForceMedian(inputArray5) );
-            Console.WriteLine("Array 6 : " + BruteForceMedian(inputArray6) );
-            Console.WriteLine("Array 7 : " + BruteForceMedian(inputArray7) );
+            Console.WriteLine("CAB 301 Assignment1 - Semester 1 2019");
+            Console.WriteLine("Student ID : n9845097");
         }
 
         // ALGORITHM BruteForceMedian(A[0..n− 1])    
