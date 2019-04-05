@@ -16,21 +16,22 @@ namespace Algorithm
         {
             // This is the kth element, where k=n2 , if the array was sorted.  
             int k = (int)Math.Ceiling(array.Length / 2.0);
+            Console.WriteLine(k);
 
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i++)  // This is how many times the basic operation run
             {
                 int numsmaller = 0; // How many elements are smaller than A[i] 
                 int numequal = 0;   // How many elements are equal to A[i]
 
                 for (int j = 0; j < array.Length; j++)
                 {
-                    if (array[j] < array[i])
+                    if (array[j] < array[i])    // Basic Operation, because it must execute
                     {
                         numsmaller++;
                     }
-                    else if (array[j] == array[i])
+                    else if (array[j] == array[i]) // Basic Operation, because it must execute
                     {
-                        numequal++;
+                        numequal++; //This one might not execute
                     }
                 }
 
