@@ -9,7 +9,7 @@ namespace Algorithm
         public int[] inputArray;
 
         [Test()]
-        public void SortedPositiionTest()
+        public void SortedPositionTest()
         {
             // Sorted
             inputArray = new int[] { 1,2,3,4,5,6,7 };
