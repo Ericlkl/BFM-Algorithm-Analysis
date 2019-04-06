@@ -13,7 +13,7 @@ namespace Algorithm
         {
             // Sorted
             inputArray = new int[] { 1,2,3,4,5,6,7 };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == 4);
+            Assert.That(BFM.BruteForceMedian(inputArray) == 4);
 
         }
 
@@ -22,7 +22,7 @@ namespace Algorithm
         {
             // Even, random
             inputArray = new int[] { 8, 12, 7, 9 };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == 8);
+            Assert.That(BFM.BruteForceMedian(inputArray) == 8);
 
         }
 
@@ -31,7 +31,7 @@ namespace Algorithm
         {
             // Odd, random
             inputArray = new int[] { 8, 5, 9 , 1 , 4 };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == 5);
+            Assert.That(BFM.BruteForceMedian(inputArray) == 5);
 
         }
 
@@ -40,7 +40,7 @@ namespace Algorithm
         {
             // Reverse order
             inputArray = new int[] { 9, 8, 7, 6, 5, 4, 3 };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == 6);
+            Assert.That(BFM.BruteForceMedian(inputArray) == 6);
 
         }
 
@@ -49,7 +49,7 @@ namespace Algorithm
         {
             // Contains negative values
             inputArray = new int[] { -5, -3, 5, 4, -2 };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == -2);
+            Assert.That(BFM.BruteForceMedian(inputArray) == -2);
 
         }
 
@@ -58,7 +58,7 @@ namespace Algorithm
         {
             // Contains duplicates
             inputArray = new int[] { 1, 2, 2, 2, 4, 5, 6, 6, 7 };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == 4);
+            Assert.That(BFM.BruteForceMedian(inputArray) == 4);
 
         }
 
@@ -67,7 +67,7 @@ namespace Algorithm
         {
             // Invalid size input!"
             inputArray = new int[] { };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == -1);
+            Assert.That(BFM.BruteForceMedian(inputArray) == -1);
 
         }
 
@@ -76,7 +76,7 @@ namespace Algorithm
         {
             // Sorted
             inputArray = new int[] { 4 };
-            Assert.That(Algorithm.MainClass.BruteForceMedian(inputArray) == 4);
+            Assert.That(BFM.BruteForceMedian(inputArray) == 4);
 
         }
     }
