@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using Microsoft.Office.Interop.Excel;
+using CsvHelper;
 
 namespace Algorithm
 {
@@ -22,7 +23,7 @@ namespace Algorithm
             return A;
         }
 
-        public static void BFM_ExecutionTimeTest(int size)
+        public static long BFM_ExecutionTimeTest(int size)
         {
             var watch = new System.Diagnostics.Stopwatch();
 
@@ -34,14 +35,13 @@ namespace Algorithm
 
             watch.Stop();
 
-            Console.WriteLine($"Array Size : {array.Length}  Execution Time: {watch.ElapsedMilliseconds} ms");
+            return watch.ElapsedMilliseconds;
         }
 
-        public static void BFM_BasicOperationTest(int size)
+        public static int BFM_BasicOperationTest(int size)
         {
             int[] array = GenerateRandomArray(size);
-            int basicOperation = BFM.BruteForceMedian_BO(array);
-            Console.WriteLine($"Array Size : {array.Length}  Basic Operation: {basicOperation}");
+            return BFM.BruteForceMedian_BO(array);
         }
 
         public static void GenerateBasicOperationCSV()
@@ -49,27 +49,52 @@ namespace Algorithm
 
             var path = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "file.csv");
 
-            Application xlApp = new Application();
+            var records = new List<CSVRow>();
 
-            if (xlApp == null)
+            for(int i = 1000; i < 20000; i+= 1000)
             {
-                Console.WriteLine("Excel is not properly installed!!");
-                return;
+                records.Add( new CSVRow
+                {
+                    Elements = i,
+                    Test1 = BFM_BasicOperationTest(i),
+                    Test2 = BFM_BasicOperationTest(i),
+                    Test3 = BFM_BasicOperationTest(i),
+                    Test4 = BFM_BasicOperationTest(i),
+                    Test5 = BFM_BasicOperationTest(i),
+                    Test6 = BFM_BasicOperationTest(i),
+                    Test7 = BFM_BasicOperationTest(i),
+                    Test8 = BFM_BasicOperationTest(i),
+                    Test9 = BFM_BasicOperationTest(i),
+                    Test10 = BFM_BasicOperationTest(i),
+                    Test11 = BFM_BasicOperationTest(i),
+                    Test12 = BFM_BasicOperationTest(i),
+                    Test13 = BFM_BasicOperationTest(i),
+                    Test14 = BFM_BasicOperationTest(i),
+                    Test15 = BFM_BasicOperationTest(i),
+                    Test16 = BFM_BasicOperationTest(i),
+                    Test17 = BFM_BasicOperationTest(i),
+                    Test18 = BFM_BasicOperationTest(i),
+                    Test19 = BFM_BasicOperationTest(i),
+                    Test20 = BFM_BasicOperationTest(i),
+                    Test21 = BFM_BasicOperationTest(i),
+                    Test22 = BFM_BasicOperationTest(i),
+                    Test23 = BFM_BasicOperationTest(i),
+                    Test24 = BFM_BasicOperationTest(i),
+                    Test25 = BFM_BasicOperationTest(i),
+                    Test26 = BFM_BasicOperationTest(i),
+                    Test27 = BFM_BasicOperationTest(i),
+                    Test28 = BFM_BasicOperationTest(i),
+                    Test29 = BFM_BasicOperationTest(i),
+                    Test30 = BFM_BasicOperationTest(i)
+                    });
             }
 
-            _Worksheet workSheet = (Worksheet)xlApp.ActiveSheet;
+            using (var writer = new StreamWriter(path))
+            using (var csv = new CsvWriter(writer))
+            {
+                csv.WriteRecords(records);
+            }
 
-            // Establish column headings in cells A1 and B1.
-            workSheet.Cells[1, "A"] = "ID Number";
-            workSheet.Cells[1, "B"] = "Current Balance";
-
-            workSheet.Cells[2, "A"] = 1;
-            workSheet.Cells[2, "B"] = 20000;
-
-            var xlWorkBook = xlApp.Workbooks.Add(workSheet);
-            xlApp.Workbooks.Add(xlWorkBook);
-
-            xlApp.Visible = true;
             Console.WriteLine("Success");
         }
     }

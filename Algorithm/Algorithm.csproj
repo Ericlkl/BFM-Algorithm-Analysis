@@ -52,6 +52,7 @@
     <Compile Include="TestCase.cs" />
     <Compile Include="BruteForceMedian.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="CSVRow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
