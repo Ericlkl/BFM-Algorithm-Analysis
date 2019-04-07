@@ -1,4 +1,8 @@
 ﻿using System;
+using System.IO;
+using System.Reflection;
+using Microsoft.Office.Interop.Excel;
+
 namespace Algorithm
 {
     public class Helper
@@ -14,6 +18,7 @@ namespace Algorithm
             {
                 A[i] = rnd.Next(1, 20000);
             }
+
             return A;
         }
 
@@ -37,6 +42,35 @@ namespace Algorithm
             int[] array = GenerateRandomArray(size);
             int basicOperation = BFM.BruteForceMedian_BO(array);
             Console.WriteLine($"Array Size : {array.Length}  Basic Operation: {basicOperation}");
+        }
+
+        public static void GenerateBasicOperationCSV()
+        {
+
+            var path = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "file.csv");
+
+            Application xlApp = new Application();
+
+            if (xlApp == null)
+            {
+                Console.WriteLine("Excel is not properly installed!!");
+                return;
+            }
+
+            _Worksheet workSheet = (Worksheet)xlApp.ActiveSheet;
+
+            // Establish column headings in cells A1 and B1.
+            workSheet.Cells[1, "A"] = "ID Number";
+            workSheet.Cells[1, "B"] = "Current Balance";
+
+            workSheet.Cells[2, "A"] = 1;
+            workSheet.Cells[2, "B"] = 20000;
+
+            var xlWorkBook = xlApp.Workbooks.Add(workSheet);
+            xlApp.Workbooks.Add(xlWorkBook);
+
+            xlApp.Visible = true;
+            Console.WriteLine("Success");
         }
     }
 }
