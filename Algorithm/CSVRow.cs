@@ -4,35 +4,35 @@ namespace Algorithm
     public class CSVRow
     {
         public int Elements { get; set; }
-        public int Test1 { get; set; }
-        public int Test2 { get; set; }
-        public int Test3 { get; set; }
-        public int Test4 { get; set; }
-        public int Test5 { get; set; }
-        public int Test6 { get; set; }
-        public int Test7 { get; set; }
-        public int Test8 { get; set; }
-        public int Test9 { get; set; }
-        public int Test10 { get; set; }
-        public int Test11 { get; set; }
-        public int Test12 { get; set; }
-        public int Test13 { get; set; }
-        public int Test14 { get; set; }
-        public int Test15 { get; set; }
-        public int Test16 { get; set; }
-        public int Test17 { get; set; }
-        public int Test18 { get; set; }
-        public int Test19 { get; set; }
-        public int Test20 { get; set; }
-        public int Test21 { get; set; }
-        public int Test22 { get; set; }
-        public int Test23 { get; set; }
-        public int Test24 { get; set; }
-        public int Test25 { get; set; }
-        public int Test26 { get; set; }
-        public int Test27 { get; set; }
-        public int Test28 { get; set; }
-        public int Test29 { get; set; }     
-        public int Test30 { get; set; }        
+        public long Test1 { get; set; }
+        public long Test2 { get; set; }
+        public long Test3 { get; set; }
+        public long Test4 { get; set; }
+        public long Test5 { get; set; }
+        public long Test6 { get; set; }
+        public long Test7 { get; set; }
+        public long Test8 { get; set; }
+        public long Test9 { get; set; }
+        public long Test10 { get; set; }
+        public long Test11 { get; set; }
+        public long Test12 { get; set; }
+        public long Test13 { get; set; }
+        public long Test14 { get; set; }
+        public long Test15 { get; set; }
+        public long Test16 { get; set; }
+        public long Test17 { get; set; }
+        public long Test18 { get; set; }
+        public long Test19 { get; set; }
+        public long Test20 { get; set; }
+        public long Test21 { get; set; }
+        public long Test22 { get; set; }
+        public long Test23 { get; set; }
+        public long Test24 { get; set; }
+        public long Test25 { get; set; }
+        public long Test26 { get; set; }
+        public long Test27 { get; set; }
+        public long Test28 { get; set; }
+        public long Test29 { get; set; }     
+        public long Test30 { get; set; }        
     }
 }

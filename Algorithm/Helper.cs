@@ -47,12 +47,13 @@ namespace Algorithm
         public static void GenerateBasicOperationCSV()
         {
 
-            var path = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "file.csv");
+            var path = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "basicOperation.csv");
 
             var records = new List<CSVRow>();
 
-            for(int i = 1000; i < 20000; i+= 1000)
+            for(int i = 1000; i <= 20000; i+= 1000)
             {
+                Console.WriteLine($"Testing on Element {i} ...");
                 records.Add( new CSVRow
                 {
                     Elements = i,
@@ -89,6 +90,65 @@ namespace Algorithm
                     });
             }
 
+            Console.WriteLine("Generate Operation Data Complete !");
+            Console.WriteLine("Generate CSV File !");
+            using (var writer = new StreamWriter(path))
+            using (var csv = new CsvWriter(writer))
+            {
+                csv.WriteRecords(records);
+            }
+
+            Console.WriteLine("Success");
+        }
+
+        public static void GenerateExecutionTimeCSV()
+        {
+
+            var path = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "executionTime.csv");
+
+            var records = new List<CSVRow>();
+
+            for (int i = 1000; i <= 20000; i += 1000)
+            {
+                Console.WriteLine($"Testing on Element {i} ...");
+                records.Add(new CSVRow
+                {
+                    Elements = i,
+                    Test1 = BFM_ExecutionTimeTest(i),
+                    Test2 = BFM_ExecutionTimeTest(i),
+                    Test3 = BFM_ExecutionTimeTest(i),
+                    Test4 = BFM_ExecutionTimeTest(i),
+                    Test5 = BFM_ExecutionTimeTest(i),
+                    Test6 = BFM_ExecutionTimeTest(i),
+                    Test7 = BFM_ExecutionTimeTest(i),
+                    Test8 = BFM_ExecutionTimeTest(i),
+                    Test9 = BFM_ExecutionTimeTest(i),
+                    Test10 = BFM_ExecutionTimeTest(i),
+                    Test11 = BFM_ExecutionTimeTest(i),
+                    Test12 = BFM_ExecutionTimeTest(i),
+                    Test13 = BFM_ExecutionTimeTest(i),
+                    Test14 = BFM_ExecutionTimeTest(i),
+                    Test15 = BFM_ExecutionTimeTest(i),
+                    Test16 = BFM_ExecutionTimeTest(i),
+                    Test17 = BFM_ExecutionTimeTest(i),
+                    Test18 = BFM_ExecutionTimeTest(i),
+                    Test19 = BFM_ExecutionTimeTest(i),
+                    Test20 = BFM_ExecutionTimeTest(i),
+                    Test21 = BFM_ExecutionTimeTest(i),
+                    Test22 = BFM_ExecutionTimeTest(i),
+                    Test23 = BFM_ExecutionTimeTest(i),
+                    Test24 = BFM_ExecutionTimeTest(i),
+                    Test25 = BFM_ExecutionTimeTest(i),
+                    Test26 = BFM_ExecutionTimeTest(i),
+                    Test27 = BFM_ExecutionTimeTest(i),
+                    Test28 = BFM_ExecutionTimeTest(i),
+                    Test29 = BFM_ExecutionTimeTest(i),
+                    Test30 = BFM_ExecutionTimeTest(i)
+                });
+            }
+
+            Console.WriteLine("Generate Execution Time Data Complete !");
+            Console.WriteLine("Generate CSV File !");
             using (var writer = new StreamWriter(path))
             using (var csv = new CsvWriter(writer))
             {
