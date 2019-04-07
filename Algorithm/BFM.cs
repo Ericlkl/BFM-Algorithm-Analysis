@@ -22,13 +22,13 @@ namespace Algorithm
                 // A[i] wheither median match the median condition or not
                 for (int j = 0; j < array.Length; j++)
                 {
-                    if (array[j] < array[i])    // Basic Operation, because it must execute
+                    if (array[j] < array[i])    // Basic Operation, Comparision
                     {
                         numsmaller++;
                     }
-                    else if (array[j] == array[i]) // Basic Operation, because it must execute
+                    else if (array[j] == array[i]) // Basic Operation, Comparision
                     {
-                        numequal++; //This one might not execute
+                        numequal++; 
                     }
                 }
 
@@ -49,7 +49,7 @@ namespace Algorithm
         // Returns the Basic Operation the Brute Force Median takes
         public static int BruteForceMedian_BO(int[] array)
         {
-            int basicOp = 0;
+            int basicOperation = 0;
             // This is the kth element, where k=n2 , if the array was sorted.  
             int k = (int)Math.Ceiling(array.Length / 2.0);
 
@@ -64,14 +64,14 @@ namespace Algorithm
                 // A[i] wheither median match the median condition or not
                 for (int j = 0; j < array.Length; j++)
                 {
-                    basicOp++;
-                    if (array[j] < array[i])    // Basic Operation, because it must execute
+                    basicOperation++;
+                    if (array[j] < array[i])    // Basic Operation, Comparision
                     {
                         numsmaller++;
                     }
-                    else if (array[j] == array[i]) // Basic Operation, because it must execute
+                    else if (array[j] == array[i]) // Basic Operation, Comparision
                     {
-                        numequal++; //This one might not execute
+                        numequal++; 
                     }
                 }
 
@@ -80,12 +80,12 @@ namespace Algorithm
                 // The array element selected by indexer i is median
                 if (numsmaller < k && k <= (numsmaller + numequal))
                 {
-                    return basicOp;    // Return the median to the user
+                    return basicOperation;    // Return the basic Operation
                 }
             }
 
             // No Result Found
-            return basicOp;   
+            return basicOperation;   
         }
     }
 }

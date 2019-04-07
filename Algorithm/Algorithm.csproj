@@ -47,9 +47,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCase.cs" />
-    <Compile Include="BruteForceMedian.cs" />
+    <Compile Include="BFM.cs" />
     <Compile Include="Helper.cs" />
-    <Compile Include="CSVRow.cs" />
+    <Compile Include="CSV.cs" />
+    <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
