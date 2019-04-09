@@ -15,7 +15,7 @@ namespace Algorithm
 
             var records = new List<CSVRow>();
 
-            for (int i = 1000; i <= 20000; i += 1000)
+            for (int i = 0; i <= 20000; i += 1000)
             {
                 Console.WriteLine($"Testing on Element {i} ...");
                 records.Add(new CSVRow
@@ -50,7 +50,37 @@ namespace Algorithm
                     Test27 = Test.BFM_BasicOperationTest(i),
                     Test28 = Test.BFM_BasicOperationTest(i),
                     Test29 = Test.BFM_BasicOperationTest(i),
-                    Test30 = Test.BFM_BasicOperationTest(i)
+                    Test30 = Test.BFM_BasicOperationTest(i),
+                    Test31 = Test.BFM_BasicOperationTest(i),
+                    Test32 = Test.BFM_BasicOperationTest(i),
+                    Test33 = Test.BFM_BasicOperationTest(i),
+                    Test34 = Test.BFM_BasicOperationTest(i),
+                    Test35 = Test.BFM_BasicOperationTest(i),
+                    Test36 = Test.BFM_BasicOperationTest(i),
+                    Test37 = Test.BFM_BasicOperationTest(i),
+                    Test38 = Test.BFM_BasicOperationTest(i),
+                    Test39 = Test.BFM_BasicOperationTest(i),
+                    Test40 = Test.BFM_BasicOperationTest(i),
+                    Test41 = Test.BFM_BasicOperationTest(i),
+                    Test42 = Test.BFM_BasicOperationTest(i),
+                    Test43 = Test.BFM_BasicOperationTest(i),
+                    Test44 = Test.BFM_BasicOperationTest(i),
+                    Test45 = Test.BFM_BasicOperationTest(i),
+                    Test46 = Test.BFM_BasicOperationTest(i),
+                    Test47 = Test.BFM_BasicOperationTest(i),
+                    Test48 = Test.BFM_BasicOperationTest(i),
+                    Test49 = Test.BFM_BasicOperationTest(i),
+                    Test50 = Test.BFM_BasicOperationTest(i),
+                    Test51 = Test.BFM_BasicOperationTest(i),
+                    Test52 = Test.BFM_BasicOperationTest(i),
+                    Test53 = Test.BFM_BasicOperationTest(i),
+                    Test54 = Test.BFM_BasicOperationTest(i),
+                    Test55 = Test.BFM_BasicOperationTest(i),
+                    Test56 = Test.BFM_BasicOperationTest(i),
+                    Test57 = Test.BFM_BasicOperationTest(i),
+                    Test58 = Test.BFM_BasicOperationTest(i),
+                    Test59 = Test.BFM_BasicOperationTest(i),
+                    Test60 = Test.BFM_BasicOperationTest(i),
                 });
             }
 
@@ -72,7 +102,7 @@ namespace Algorithm
 
             var records = new List<CSVRow>();
 
-            for (int i = 1000; i <= 20000; i += 1000)
+            for (int i = 0; i <= 20000; i += 1000)
             {
                 Console.WriteLine($"Testing on Element {i} ...");
                 records.Add(new CSVRow
@@ -107,7 +137,37 @@ namespace Algorithm
                     Test27 = Test.BFM_ExecutionTimeTest(i),
                     Test28 = Test.BFM_ExecutionTimeTest(i),
                     Test29 = Test.BFM_ExecutionTimeTest(i),
-                    Test30 = Test.BFM_ExecutionTimeTest(i)
+                    Test30 = Test.BFM_ExecutionTimeTest(i),
+                    Test31 = Test.BFM_ExecutionTimeTest(i),
+                    Test32 = Test.BFM_ExecutionTimeTest(i),
+                    Test33 = Test.BFM_ExecutionTimeTest(i),
+                    Test34 = Test.BFM_ExecutionTimeTest(i),
+                    Test35 = Test.BFM_ExecutionTimeTest(i),
+                    Test36 = Test.BFM_ExecutionTimeTest(i),
+                    Test37 = Test.BFM_ExecutionTimeTest(i),
+                    Test38 = Test.BFM_ExecutionTimeTest(i),
+                    Test39 = Test.BFM_ExecutionTimeTest(i),
+                    Test40 = Test.BFM_ExecutionTimeTest(i),
+                    Test41 = Test.BFM_ExecutionTimeTest(i),
+                    Test42 = Test.BFM_ExecutionTimeTest(i),
+                    Test43 = Test.BFM_ExecutionTimeTest(i),
+                    Test44 = Test.BFM_ExecutionTimeTest(i),
+                    Test45 = Test.BFM_ExecutionTimeTest(i),
+                    Test46 = Test.BFM_ExecutionTimeTest(i),
+                    Test47 = Test.BFM_ExecutionTimeTest(i),
+                    Test48 = Test.BFM_ExecutionTimeTest(i),
+                    Test49 = Test.BFM_ExecutionTimeTest(i),
+                    Test50 = Test.BFM_ExecutionTimeTest(i),
+                    Test51 = Test.BFM_ExecutionTimeTest(i),
+                    Test52 = Test.BFM_ExecutionTimeTest(i),
+                    Test53 = Test.BFM_ExecutionTimeTest(i),
+                    Test54 = Test.BFM_ExecutionTimeTest(i),
+                    Test55 = Test.BFM_ExecutionTimeTest(i),
+                    Test56 = Test.BFM_ExecutionTimeTest(i),
+                    Test57 = Test.BFM_ExecutionTimeTest(i),
+                    Test58 = Test.BFM_ExecutionTimeTest(i),
+                    Test59 = Test.BFM_ExecutionTimeTest(i),
+                    Test60 = Test.BFM_ExecutionTimeTest(i),
                 });
             }
 
@@ -153,7 +213,37 @@ namespace Algorithm
         public long Test26 { get; set; }
         public long Test27 { get; set; }
         public long Test28 { get; set; }
-        public long Test29 { get; set; }     
-        public long Test30 { get; set; }        
+        public long Test29 { get; set; }
+        public long Test30 { get; set; }
+        public long Test31 { get; set; }
+        public long Test32 { get; set; }
+        public long Test33 { get; set; }
+        public long Test34 { get; set; }
+        public long Test35 { get; set; }
+        public long Test36 { get; set; }
+        public long Test37 { get; set; }
+        public long Test38 { get; set; }
+        public long Test39 { get; set; }
+        public long Test40 { get; set; }
+        public long Test41 { get; set; }
+        public long Test42 { get; set; }
+        public long Test43 { get; set; }
+        public long Test44 { get; set; }
+        public long Test45 { get; set; }
+        public long Test46 { get; set; }
+        public long Test47 { get; set; }
+        public long Test48 { get; set; }
+        public long Test49 { get; set; }
+        public long Test50 { get; set; }
+        public long Test51 { get; set; }
+        public long Test52 { get; set; }
+        public long Test53 { get; set; }
+        public long Test54 { get; set; }
+        public long Test55 { get; set; }
+        public long Test56 { get; set; }
+        public long Test57 { get; set; }
+        public long Test58 { get; set; }
+        public long Test59 { get; set; }
+        public long Test60 { get; set; }
     }
 }

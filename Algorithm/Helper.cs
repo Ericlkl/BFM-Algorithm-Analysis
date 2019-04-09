@@ -23,6 +23,18 @@ namespace Algorithm
             return A;
         }
 
+        public static int[] GenerateSortedArray(int size)
+        {
+            int[] A = new int[size];
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                A[i] = i;
+            }
+
+            return A;
+
+        }
 
     }
 }

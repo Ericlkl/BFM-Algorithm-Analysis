@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace Algorithm
 {
     public class Test
@@ -7,11 +9,12 @@ namespace Algorithm
         {
             var watch = new System.Diagnostics.Stopwatch();
 
-            int[] array = Helper.GenerateRandomArray(size);
+            Random rnd = new Random();
+            int[] arr = Enumerable.Range(0, size).OrderBy(c => rnd.Next()).ToArray();
 
             watch.Start();
 
-            BFM.BruteForceMedian(array);
+            BFM.BruteForceMedian(arr);
 
             watch.Stop();
 
@@ -20,8 +23,10 @@ namespace Algorithm
 
         public static int BFM_BasicOperationTest(int size)
         {
-            int[] array = Helper.GenerateRandomArray(size);
-            return BFM.BruteForceMedian_BO(array);
+            Random rnd = new Random();
+            int[] arr = Enumerable.Range(0, size).OrderBy(c => rnd.Next()).ToArray();
+
+            return BFM.BruteForceMedian_BO(arr);
         }
 
     }
