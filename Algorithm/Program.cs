@@ -12,6 +12,7 @@ namespace Algorithm
 
             CSV.GenerateExecutionTimeCSV();
             CSV.GenerateBasicOperationCSV();
+            Console.WriteLine("Success! Please Check bin/debug folder to get the csv file");
         }
 
 
