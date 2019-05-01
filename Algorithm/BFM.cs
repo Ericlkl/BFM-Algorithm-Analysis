@@ -69,6 +69,7 @@ namespace Algorithm
                     {
                         numsmaller++;
                     }
+                    basicOperation++;
                     else if (array[j] == array[i]) // Basic Operation, Comparision
                     {
                         numequal++; 
