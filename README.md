@@ -1,2 +1,2 @@
-# CAB301_Assignment1
-CAB301 Assignment1
+# BFM Algorithm Analysis
+Empricial Analysis on Brute Force Median Algorithm
